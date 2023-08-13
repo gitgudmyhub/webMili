@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Akhir Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="songs.html">SONGS</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="live.html">LIVE</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+    <div class="bannerHome">
+        <img src="images/newsBanner.jpg">
+    </div>
+
+    </section>
+
+<!-- -----news----- -->
+<section class="news-content">
+    <h1>NEWS</h1>
+    <div class="row">
+        <div class="news-col">
+            <div>
+                <img src="images/news.jpg">
+                <span>
+                    <small>Community News</small><br> <br>
+                    <h1>COME SEE OUR FIRST INTERNATIONAL CONCERTS SINCE COVID!!</h1>
+                    <p>We'll have NEW MERCH and CASSETTE TAPES ready at both conventions!!</p> <br> <br>
+                    <a href="https://www.youtube.com/channel/UCVh47EKH9VLresRqiYi9txw/community?lb=UgkxOsXGjmwvOmzK4ztpRc0kdMEHoOH7C3lf">Read More Here !!!</a>
+                </span>
+            </div> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="news-col">
+            <div>
+                <img src="images/news1.jpg">
+                <span>
+                    <small>Music News</small><br> <br>
+                    <h1>COME SEE OUR NEW RELEASED SONG!!</h1>
+                    <p>Mili - Gunners In The Rain - DEEMO II Soundtrack</p> <br> <br>
+                    <a href="https://www.youtube.com/watch?v=-DHcjEVm-l4">Read More Here !!!</a>
+                </span>
+            </div> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="news-col">
+            <div>
+                <img src="images/news2.jfif">
+                <span>
+                    <small>Merch News</small><br> <br>
+                    <h1>COME SEE OUR NEW MERCH IN STOCK!!</h1>
+                    <p>Bring your merch/albums to our autograph session to get it signed!!</p> <br> <br>
+                    <a href="https://twitter.com/ProjectMili/status/1667908294223224833">Read More Here !!!</a>
+                </span>
+            </div> 
+        </div>
+    </div>
+</section>
+
+<!-- ------footer------ -->
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="footer-col">
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your Email">
+                <input type="button" value="SUBSCRIBE" class="hero-btn red-btn">
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="icons">
+                <a href="https://www.youtube.com/user/ProjectMili" class="fa fa-3x fa-youtube-play"></a>
+                <a href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs" class="fa fa-3x fa-spotify"></a>
+                <a href="https://music.apple.com/us/artist/mili/906934266" class="fa fa-3x fa-apple"></a>
+            </div>
+        </div>
+    </div>
+    <p>by signing up, I agree to recieve personalized marketing messages and updates about MILI <br>
+        Thank you for your continous support.</p>
+</section>
+
+<!-- ----------------JavaScript For Toggle Menu---------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>

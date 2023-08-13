@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Akhir Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="songs.html">SONGS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="live.html">LIVE</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+    </section>
+
+<!-- -----listen----- -->
+
+<section class="cpurchase-us">
+    <div class="row">
+        <div class="cpurchase-col">
+            <h1 style="text-align: center;">FILL UP INFO TO COMPLETE PURCHASE</h1>
+            <div  class="contact-col">
+                <form action="formHandler.php" method="post">
+                    <input style="text-align: center;" type="text" name="name" placeholder="Enter Your Name" required>
+                    <input style="text-align: center;" type="number" name="name" placeholder="Enter Your Phone Number" required>
+                    <input style="text-align: center;" type="email" name="email" placeholder="Enter Email Address" required>
+                    <input style="text-align: center;" type="text" name="subject" placeholder="Select Your Payment Method" required>
+                </form>
+            </div>
+        </div>
+        <div class="cpurchase-col">
+            <div class="cpurchase-pic">
+                <img src="images/pm1.png">
+                <span>
+                    <h1>Screen Printed T-Shirts</h1>
+                    <p>Rp. 150.000,00</p>
+                </span>
+            </div>
+            <div class="cpurchase-pic">
+                <div>
+                    <h5>Subtotal</h5>
+                </div>
+                <div>
+                    <p>Rp. 150.000,00</p>
+                </div>
+            </div>
+            <div class="cpurchase-pic">
+                <div>
+                    <h5>Shipping</h5>
+                </div>
+                <div>
+                    <p>Rp. 150.000,00</p>
+                </div>
+            </div>
+            <div class="cpurchase-pic">
+                <div>
+                    <h5 style="font-weight: 600; ">Total</h5>
+                </div>
+                <div>
+                    <p>Rp. 150.000,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a style="font-size: 25px;" href="" class="hero-btn">PURCHASE NOW</a>
+    </div>
+    
+</section>
+
+<!-- ------footer------ -->
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="footer-col">
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your Email">
+                <input type="button" value="SUBSCRIBE" class="hero-btn red-btn">
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="icons">
+                <a target="_blank" href="https://www.youtube.com/user/ProjectMili" class="fa fa-3x fa-youtube-play"></a>
+                <a target="_blank" href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs" class="fa fa-3x fa-spotify"></a>
+                <a target="_blank" href="https://music.apple.com/us/artist/mili/906934266" class="fa fa-3x fa-apple"></a>
+            </div>
+        </div>
+    </div>
+    <p>by signing up, I agree to recieve personalized marketing messages and updates about MILI <br>
+    Thank you for your continous support.</p>
+</section>
+
+<!-- ----------------JavaScript For Toggle Menu---------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>

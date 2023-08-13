@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Akhir Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">SONGS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="live.html">LIVE</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+    <div class="bannerHome">
+        <img src="images/songBanner.jpg">
+    </div>
+
+    </section>
+
+<!-- ------- song -------- -->
+<section class="song">
+    <h1>SINGLES</h1>
+    <div class="row">
+        <div class="video-col">
+            <div>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/3GcgxkZuDjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/Q6Ik94T99Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/wOcCu31oi7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/skH-wooEasg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/JHY0PYZXvfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/LxduFWbbndE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video-col">
+            <div>
+
+            </div>
+        </div> 
+    </div>  
+    <h1>ALBUMS</h1>
+    <div class="row">
+        <div class="song-col">
+            <div>
+                <img src="images/song2.jpg">
+                <span>
+                    <h2>To Kill A Living Book</h2> <br>
+                    <a href="lyrics2.html" class="hero-btn red-btn">LISTEN NOW</a> 
+                    <a href="store.html" style="padding: 12px 41px;" class="hero-btn red-btn">BUY NOW</a>
+                </span>
+            </div>
+        </div>
+        <div class="song-col">
+            <div>
+                <img src="images/lagu2.jpg">
+                <span>
+                    <h2>Mag Mel</h2> <br>
+                    <a href="lyrics.html" class="hero-btn red-btn">LISTEN NOW</a> 
+                    <a href="store.html" style="padding: 12px 41px;" class="hero-btn red-btn">BUY NOW</a>
+                </span>
+            </div>
+        </div> 
+    </div>        
+
+</section>
+
+<!-- ------footer------ -->
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="footer-col">
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your Email">
+                <input type="button" value="SUBSCRIBE" class="hero-btn red-btn">
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="icons">
+                <a target="_blank" href="https://www.youtube.com/user/ProjectMili" class="fa fa-3x fa-youtube-play"></a>
+                <a target="_blank" href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs" class="fa fa-3x fa-spotify"></a>
+                <a target="_blank" href="https://music.apple.com/us/artist/mili/906934266" class="fa fa-3x fa-apple"></a>
+            </div>
+        </div>
+    </div>
+    <p>by signing up, I agree to recieve personalized marketing messages and updates about MILI <br>
+    Thank you for your continous support.</p>
+</section>
+
+<!-- ----------------JavaScript For Toggle Menu---------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>

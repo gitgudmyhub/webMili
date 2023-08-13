@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Akhir Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="songs.html">SONGS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="">LIVE</a></li>
+                    <li><a href="">STORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </section>
+
+<!-- -----buy----- -->
+
+<section class="buy">
+    <div class="row">
+        <div class="buy-col">
+            <div>
+                <img src="images/cloth1.jpeg">
+            </div>
+            <div>
+                <img src="images/cloth3.jpeg">
+            </div>
+            <div>
+                <img src="images/cloth4.jpeg">
+            </div>
+        </div>
+        <div class="buy-col">
+            <h1>Screen Printed T-Shirts</h1>
+                <p><small><br>Rp. 150.000,00 <br><br></small></p>
+                <!-- <div style="text-align: left;" class="size">
+                    <div>
+                        <a href="">S</a>
+                    </div>
+                    <div>
+                        <a href="">M</a>
+                    </div>
+                    <div>
+                        <a href="">L</a>
+                    </div>
+                    <div>
+                        <a href="">XL</a>
+                    </div>
+                </div> -->
+                <div style="text-align: left;">
+                    <a href="cPurchase.html" class="hero-btn red-btn">Purchase Now</a>
+                </div>
+                <p>
+                    <br>
+                    An off-white T-shirt featuring the moon from <br>
+                    Key Ingredient and the Mili logo. <br><br>
+                    The orange Mili logos are printed in an extra <br>
+                    thick rubber paint. <br><br>
+                    The clothing tag is an embroidery of Mili's <br>
+                    logo in blue. <br><br>
+                    Each T-shirt is screen printed by hand in <br>
+                    Gifu prefecture, Japan. <br><br><br><br>
+                    Graphic design by Cassie Wei. <br><br>
+                    Mili logo design by Gyo Terauchi. <br><br>
+                    Printed by KAMIMURA KOUHAN Inc.. <br><br>
+                    Photography by Yamato Kasai. <br><br><br><br>
+                    Material: 100% cotton <br><br>
+                    T-shirts made in China, hand-printed in 
+                    Japan. 
+                </p>
+                <!-- <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                    </tr>
+                    <tr>
+                        <td>Body Length</td>
+                        <td>63 cm</td>
+                        <td>68 cm</td>
+                        <td>72 cm</td>
+                        <td>75 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Body Width</td>
+                        <td>47 cm</td>
+                        <td>52 cm</td>
+                        <td>55 cm</td>
+                        <td>60 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Shoulder Length</td>
+                        <td>42 cm</td>
+                        <td>46 cm</td>
+                        <td>50 cm</td>
+                        <td>55 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Shoulder Length</td>
+                        <td>18 cm</td>
+                        <td>22 cm</td>
+                        <td>22 cm</td>
+                        <td>23 cm</td>
+                    </tr>
+                </table> -->
+        </div>
+    </div>
+</section>
+
+<!-- ------footer------ -->
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="footer-col">
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your Email">
+                <input type="button" value="SUBSCRIBE" class="hero-btn red-btn">
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="icons">
+                <a target="_blank" href="https://www.youtube.com/user/ProjectMili" class="fa fa-3x fa-youtube-play"></a>
+                <a target="_blank" href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs" class="fa fa-3x fa-spotify"></a>
+                <a target="_blank" href="https://music.apple.com/us/artist/mili/906934266" class="fa fa-3x fa-apple"></a>
+            </div>
+        </div>
+    </div>
+    <p>by signing up, I agree to recieve personalized marketing messages and updates about MILI <br>
+    Thank you for your continous support.</p>
+</section>
+
+<!-- ----------------JavaScript For Toggle Menu---------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>

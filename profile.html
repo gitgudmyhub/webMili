@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Akhir Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="songs.html">SONGS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="live.html">LIVE</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+    <div class="bannerHome">
+        <img src="images/profileBanner.jfif">
+    </div>
+
+    </section>
+
+<!-- -----contact us----- -->
+
+<section class="profile">
+    <h1>PROFILE</h1>
+    <h5>Mili is a Japanese indie music group founded in August 2012, consisting of Cassie Wei, 
+        Yamato Kasai, Yukihito Mitomo, Shoto Yoshida, and Ao Fujimori. Mili covers electronic 
+        classical, contemporary classical, and post-classical genres of music and is not limited to 
+        songs in Japanese, but also in English, Chinese, and French. Aside from releasing their own 
+        songs, Mili has also contributed their music, lyrics, and/or songs to various media such as the 
+        rhythm games Cytus and Deemo, other games like Library of Ruina, Mahoyaku and ENDER 
+        LILIES, commercial video, and for other artists. Mili is labeled under Saihate Records; as of 
+        October 2019 and announced in April 2020, they have separated from their music 
+        management company. <br><br>
+        The group's YouTube channel is considered exceptional within the indie world, exceeding 
+        500,000 YouTube subscribers. Three of their released CDs took the first places in Oricon 
+        Indies chart, as well as appearing in Summer Sonic for two consecutive years since 2017. The 
+        group is named after the Brothers Grimm fairy tale, "Dear Mili."</h5>
+    <h1 style="text-align: center; padding-top: 80px;">MEMBERS</h1>
+    <div class="row">
+        <div class="profile-col">
+            <div class="profile-pic">
+                <img src="images/member1.jfif">
+                <div>
+                    <h2>CASSIE WEI</h2><br>
+                    <h5>Vocals, Song Writing</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="profile-col">
+            <div class="profile-pic">
+                <img src="images/member2.jfif">
+                <div>
+                    <h2>YAMATO KASAI</h2><br>
+                    <h5>Song Writing, Arrangements, Guitar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="profile-col">
+            <div class="profile-pic">
+                <img src="images/member3.jfif">
+                <div>
+                    <h2>YUKIHITO</h2><br>
+                    <h5>Bass, Arrangements</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="profile-col">
+            <div class="profile-pic">
+                <img src="images/member4.jfif">
+                <div>
+                    <h2>SHOTO YOSHIDA</h2><br>
+                    <h5>Drums, Arrangements</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ------footer------ -->
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="footer-col">
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your Email">
+                <input type="button" value="SUBSCRIBE" class="hero-btn red-btn">
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="icons">
+                <a target="_blank" href="https://www.youtube.com/user/ProjectMili" class="fa fa-3x fa-youtube-play"></a>
+                <a target="_blank" href="https://open.spotify.com/artist/0K05TDnN7xPwIHDOwD2YYs" class="fa fa-3x fa-spotify"></a>
+                <a target="_blank" href="https://music.apple.com/us/artist/mili/906934266" class="fa fa-3x fa-apple"></a>
+            </div>
+        </div>
+    </div>
+    <p>by signing up, I agree to recieve personalized marketing messages and updates about MILI <br>
+    Thank you for your continous support.</p>
+</section>
+
+<!-- ----------------JavaScript For Toggle Menu---------------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
